@@ -1,0 +1,30 @@
+<section id="finish-product">
+  <div class="table-responsive">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Product</th>
+          <th scope="col">Count</th>
+          <th scope="col"></th>
+          <th scope="col"></th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of products">
+          <td scope="row">{{product.id}}</td>
+          <td>{{product.productName}}</td>
+          <td>{{product.count}}</td>
+          <td><button type="button" class="btn btn-primary" (click)="product.count = product.count + 1">+</button></td>
+          <td><button type="button" class="btn btn-primary" (click)="product.count = product.count - 1">-</button></td>
+          <td><button type="button" class="btn btn-primary" (click)="createFinishedProduct(product)">Create {{product.productName}}</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+
+

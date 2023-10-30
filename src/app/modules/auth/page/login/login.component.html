@@ -1,0 +1,61 @@
+<section id="login">
+  <h3 class="text-center text-white pt-5">Login form</h3>
+  <div class="container">
+      <div id="login-row" class="row justify-content-center align-items-center">
+          <div id="login-column" class="col-md-6">
+              <div id="login-box" class="col-md-12">
+
+<div class="alert alert-info" role="alert">
+    Email: rakesh@gmail.com &&
+    Password: 123456
+  </div>
+  
+  <div [hidden]="!error" class="alert alert-danger">
+    {{ error }}
+  </div>
+  
+  <fieldset [disabled]="isLoading">
+    <form (ngSubmit)="login()" class="form" [formGroup]="loginForm">
+        <div class="form-group">
+          <label class="d-block">
+            <input type="text" class="form-control" placeholder="Email" formControlName="email">
+            <app-control-messages [control]="f['email']"></app-control-messages>
+          </label>
+        </div>
+        <div class="form-group">
+          <label class="d-block">
+            <input type="password" name="password" autocomplete="on" class="form-control" placeholder="Password" formControlName="password">
+            <app-control-messages [control]="f['password']"></app-control-messages>
+          </label>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary btn-block btn-raised" type="submit" [disabled]="loginForm.invalid">
+            <span [hidden]="isLoading">Submit</span>
+            <span [hidden]="!isLoading">
+              <fa-icon icon="asterisk" size="3x" [spin]="true"></fa-icon>
+            </span>
+          </button>
+        </div>
+    </form>
+  </fieldset>
+  </div>
+</div>
+</div>
+</div>
+</section>
+
+  <!-- <form class="form-signin">
+    <img class="mb-4" src="/docs/4.6/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+    <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+    <label for="inputEmail" class="sr-only">Email address</label>
+    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="" fdprocessedid="u8yk9">
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="" fdprocessedid="uaj3ab">
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> Remember me
+      </label>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block" type="submit" fdprocessedid="1dw84f">Sign in</button>
+    <p class="mt-5 mb-3 text-muted">© 2017-2022</p>
+  </form> -->

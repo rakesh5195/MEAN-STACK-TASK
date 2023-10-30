@@ -1,0 +1,76 @@
+{
+    "products": [
+      {
+        "name": "Rice",
+        "colour": "red",
+        "price": 234,
+        "count": 12,
+        "id": 1
+      },
+      {
+        "name": "Bread",
+        "colour": "blue",
+        "price": 25,
+        "count": 10,
+        "id": 2
+      },
+      {
+        "name": "Milk",
+        "colour": "green",
+        "price": 19,
+        "count": 8,
+        "id": 3
+      },
+      {
+        "name": "Eggs",
+        "colour": "yellow",
+        "price": 9,
+        "count": 15,
+        "id": 4
+      },
+      {
+        "name": "Apples",
+        "colour": "pink",
+        "price": 999,
+        "count": 20,
+        "id": 5
+      },
+      {
+        "name": "Pasta",
+        "colour": "aqua",
+        "price": 14,
+        "count": 7,
+        "id": 6
+      },
+      {
+        "name": "Cereal",
+        "colour": "black",
+        "price": 29,
+        "count": 2,
+        "id": 7
+      },
+      {
+        "name": "Butter",
+        "colour": "yellow",
+        "price": 12,
+        "count": 9,
+        "id": 8
+      },
+      {
+        "name": "Cheese",
+        "colour": "aqua",
+        "price": 6,
+        "count": 3,
+        "id": 9
+      },
+      {
+        "name": "Onions",
+        "colour": "green",
+        "price": 34,
+        "count": 5,
+        "id": 10
+      }
+    ]
+  }
+  
+  
